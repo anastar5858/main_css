@@ -164,6 +164,26 @@
 .footer-section {
   text-align: center;
 }
+/* styles for about page */
+.about-title{
+  font-size: 36px;
+  font-weight: extra-bold;
+}
+.about-heading{
+  background-image: url(../main_css/images/about-page-image1.avif);
+  height: 25vh;
+  background-position: center;
+}
+.about-heading-info>h1{
+  color: #1f2937 !important;
+}
+.image-container{
+  width: 50%;
+}
+.image-container>img{
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .flexbox-container {
     flex-direction: column;

@@ -235,21 +235,6 @@ footer {
     width: 100vw;
     justify-content: space-around;
   }
-  /* header information section  */
-  .desc {
-    flex-direction: row;
-  }
-  .desc-img {
-    max-width: 95vw;
-    height: auto;
-  }
-  .title {
-    margin: 0;
-    align-self: flex-start;
-  }
-  .hero-btn {
-    align-self: flex-start
-  }
   /* random information section */
   .info-section {
     align-items: center;
@@ -277,5 +262,23 @@ footer {
   .bottom-map-sec {
       display: flex;
       gap: 5rem;
+  }
+}
+/* for the header issue with long textx (temporary fix) */
+@media only screen and (min-width: 1300px) {
+  /* header information section  */
+  .desc {
+    flex-direction: row;
+  }
+  .desc-img {
+    max-width: 95vw;
+    height: auto;
+  }
+  .title {
+    margin: 0;
+    align-self: flex-start;
+  }
+  .hero-btn {
+    align-self: flex-start
   }
 }

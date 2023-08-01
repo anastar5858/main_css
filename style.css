@@ -170,30 +170,46 @@
   font-weight: extra-bold;
 }
 .about-heading{
-  background-image: url(../main_css/images/about-page-image1.avif);
   display: flex;
   align-items: center;
-  text-align: center;
+  background-color: #1f2937;
   height: 30vh;
   background-position: center;
   background-size: cover;
-}
-.about-heading-info{
-  
-  width: 100%;
-  backdrop-filter: blur(10px) saturate(70%);
-}
-.about-heading-info>h1{
-  color: #1f2937 !important;
+  color: #e5e7eb;
+  gap: 40px;
 }
 .about-heading-info>p{
   font-size: 18px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.about-header-image-container{
+  height: 100%;
+  overflow: hidden;
+ 
+}
+.about-header-image-container>img{
+  width: 100%;
+  object-fit: cover;
 }
 .about-mission{
-  background-color:#3882f6;
   text-align: center;
   padding: 100px 40px 80px;
-  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+}
+.about-mission>div{
+  border: #3882f6 solid 5px;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.about-mission>div>p{
+  line-height: 20px;
 }
 .about-reasons{
   padding-top: 40px;
@@ -215,9 +231,11 @@
   margin-bottom: 40px;
   padding: 40px;
   gap: 40px;
+  width: auto;
 }
 .about-reasons>div>p{
   flex:1;
+  
 }
 .reasons-image-container{
   flex: 1;
@@ -270,6 +288,7 @@ text-align: center;
   cursor: pointer;
   
 }
+/* end of about page styles */
 
 @media only screen and (max-width: 768px) {
   .flexbox-container {
@@ -308,4 +327,35 @@ text-align: center;
     width: 300px;
     height: 300px;
   }
+  .about-heading{
+    flex-direction: column-reverse;
+    padding: 0px;
+    text-align: center;
+  }
+  .hero-wrapper{
+    padding: 40px 20px;
+  }
+  .about-cta-form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .about-cta-form>input{
+    width: -webkit-fill-available;
+    margin: 0;
+  }
+  .about-cta-form>button{
+    width: 100%;
+  }  
+  .about-reasons>.info-title , .about-call-for-action>.info-title{
+    font-size: 24px;
+  }
+  .about-header-image-container{
+    display: none ;
+  }
+  .about-heading{
+    height:fit-content;
+  }
+  /* end of responsive style for mobile */
+  
 }

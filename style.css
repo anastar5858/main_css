@@ -352,7 +352,6 @@ text-align: center;
   .cta-texts {
     margin-bottom: 30px;
   }
-  /* <<<<<<< Tran */
   /* responsive style for about page */
   .about-reasons>div, .about-reasons>div:nth-child(even){
     flex-direction: column;

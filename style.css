@@ -35,7 +35,7 @@ a, .hero-paragraph, .cta-section, .meet-greet {
 input, textarea {
   text-align: center;
   border: 0.05rem solid #E5E7EB;
-  border-radius: 5rem;
+  border-radius: 2ex;
 }
 /* for contact/index page --------> */
 /* header section  */

@@ -169,14 +169,106 @@
   font-size: 36px;
   font-weight: extra-bold;
 }
+.about-heading{
+  background-image: url(../main_css/images/about-page-image1.avif);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+.about-heading-info{
+  
+  width: 100%;
+  backdrop-filter: blur(10px) saturate(70%);
+}
 .about-heading-info>h1{
   color: #1f2937 !important;
 }
-.image-container{
-  width: 50%;
+.about-heading-info>p{
+  font-size: 18px;
 }
-.image-container>img{
-  width: 100%;
+.about-mission{
+  background-color:#3882f6;
+  text-align: center;
+  padding: 100px 40px 80px;
+  color: #e5e7eb;
+}
+.about-reasons{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+.about-reasons>h1{
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+.about-reasons>div:nth-child(even){
+  background-color: #e5e7eb;
+  flex-direction: row-reverse;
+}
+.about-reasons>div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 40px;
+  gap: 40px;
+}
+.about-reasons>div>p{
+  flex:1;
+}
+.reasons-image-container{
+  flex: 1;
+  width: 500px;
+  height: 500px;
+}
+.reasons-image-container>img{
+ width: 100%;
+ height:100%;
+ object-fit: cover;
+
+}
+.reason-point{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.about-call-for-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-cta-info{
+  background-color: #3882f6;
+  width: 70vw;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-align: center;
+  
+}
+.about-cta-info> form {
+ margin-top: 20px
+}
+.about-call-for-action>h1{
+text-align: center;
+}
+.about-cta-form>input{
+  border: none;
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-cta-form>button{
+  background-color: transparent;
+  cursor: pointer;
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -206,5 +298,14 @@
   }
   .cta-texts {
     margin-bottom: 30px;
+  }
+  /* responsive style for about page */
+  .about-reasons>div, .about-reasons>div:nth-child(even){
+    flex-direction: column;
+  }
+  .reasons-image-container{
+    flex: 1;
+    width: 300px;
+    height: 300px;
   }
 }

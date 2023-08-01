@@ -21,7 +21,7 @@ header, footer {
 .button, .cta-section, button {
   background-color: #3882f6;
 }
-a, .hero-paragraph, .cta-section {
+a, .hero-paragraph, .cta-section, .meet-greet {
   color: #E5E7EB;
 }
 .logo, .title, footer {

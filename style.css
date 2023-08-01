@@ -173,6 +173,131 @@ a {
 .footer-section {
   text-align: center;
 }
+/* styles for about page */
+.about-title{
+  font-size: 36px;
+  font-weight: extra-bold;
+}
+.about-heading{
+  display: flex;
+  align-items: center;
+  background-color: #1f2937;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  color: #e5e7eb;
+  gap: 40px;
+}
+.about-heading-info>p{
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.about-header-image-container{
+  height: 100%;
+  overflow: hidden;
+ 
+}
+.about-header-image-container>img{
+  width: 100%;
+  object-fit: cover;
+}
+.about-mission{
+  text-align: center;
+  padding: 100px 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+}
+.about-mission>div{
+  border: #3882f6 solid 5px;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.about-mission>div>p{
+  line-height: 20px;
+}
+.about-reasons{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+.about-reasons>h1{
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+.about-reasons>div:nth-child(even){
+  background-color: #e5e7eb;
+  flex-direction: row-reverse;
+}
+.about-reasons>div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 40px;
+  gap: 40px;
+  width: auto;
+}
+.about-reasons>div>p{
+  flex:1;
+  
+}
+.reasons-image-container{
+  flex: 1;
+  width: 500px;
+  height: 500px;
+}
+.reasons-image-container>img{
+ width: 100%;
+ height:100%;
+ object-fit: cover;
+
+}
+.reason-point{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.about-call-for-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-cta-info{
+  background-color: #3882f6;
+  width: 70vw;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-align: center;
+  
+}
+.about-cta-info> form {
+ margin-top: 20px
+}
+.about-call-for-action>h1{
+text-align: center;
+}
+.about-cta-form>input{
+  border: none;
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-cta-form>button{
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+/* end of about page styles */
 @media only screen and (max-width: 768px) {
   .flexbox-container {
     flex-direction: column;
@@ -227,5 +352,44 @@ a {
   .cta-texts {
     margin-bottom: 30px;
   }
-
+  /* <<<<<<< Tran */
+  /* responsive style for about page */
+  .about-reasons>div, .about-reasons>div:nth-child(even){
+    flex-direction: column;
+  }
+  .reasons-image-container{
+    flex: 1;
+    width: 300px;
+    height: 300px;
+  }
+  .about-heading{
+    flex-direction: column-reverse;
+    padding: 0px;
+    text-align: center;
+  }
+  .hero-wrapper{
+    padding: 40px 20px;
+  }
+  .about-cta-form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .about-cta-form>input{
+    width: -webkit-fill-available;
+    margin: 0;
+  }
+  .about-cta-form>button{
+    width: 100%;
+  }  
+  .about-reasons>.info-title , .about-call-for-action>.info-title{
+    font-size: 24px;
+  }
+  .about-header-image-container{
+    display: none ;
+  }
+  .about-heading{
+    height:fit-content;
+  }
+  /* end of responsive style for mobile */
 }

@@ -29,7 +29,11 @@ a, .hero-paragraph, .cta-section, .meet-greet {
 input, textarea {
     text-align: center;
     border: 0.05rem solid #E5E7EB;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
+}
+textarea {
+    height: 10vh;
+    max-width: 100vw;
 }
 .section-line {
     width: 50vw;
@@ -155,6 +159,7 @@ a {
     background-color: #2d3c52;
 }
 .meet-form, .ge-feed {
+    width: 95vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +206,7 @@ footer {
 }
 .desc-img {
     max-width: 95vw;
-    height: auto;
+    max-height: 50vh;
 }
 .title {
     margin: 0;

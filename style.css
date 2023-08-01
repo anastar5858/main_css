@@ -17,11 +17,11 @@ main > * {
 header, footer {
   background-color: #1F2937;
 }
-/* button for contact page --------> */
-.button, .cta-section, button {
+
+.button, .cta-section {
   background-color: #3882f6;
 }
-a, .hero-paragraph, .cta-section, .meet-greet {
+a, .hero-paragraph, .cta-section {
   color: #E5E7EB;
 }
 .logo, .title, footer {
@@ -31,13 +31,6 @@ a, .hero-paragraph, .cta-section, .meet-greet {
   padding-right: 20%;
   padding-left: 20%;
 } 
-/* for contact page --------> */
-input, textarea {
-  text-align: center;
-  border: 0.05rem solid #E5E7EB;
-  border-radius: 2ex;
-}
-/* for contact/index page --------> */
 /* header section  */
 header {
   display: flex;
@@ -92,8 +85,7 @@ a {
   padding: 2ex 5ex 2ex 5ex; 
 
 }
-/* button for contact page --------> */
-.button, button {
+.button {
   padding: 1ex 2ex 1ex 2ex; 
   border-radius: 1ex;
   text-align: center;
@@ -101,7 +93,6 @@ a {
   border: 0.01rem solid #F9FAF8;
   height: fit-content;
 }
-/*for index page only --------> */
 /* info section  */
 .info-section {
   display: flex;
@@ -137,7 +128,6 @@ em, small {
   font-size: 36px;
   color: #1F2937;
 }
-/*for contact/index page --------> */
 /* call to action section  */
 .cta-section {
   margin-right: calc(100vw - 90%);
@@ -154,86 +144,33 @@ em, small {
 .cta-small-text {
   opacity: 0.8;
 }
-/*for contact/index page --------> */
 /* footer section  */
 footer {
   margin-top: 2vh;
   text-align: center;
 }
-/*for contact page only --------> */
-/* branch maps and info section */
-/* **using animation here** */
-.info-title {
-  font-size: 36px;
-  font-weight: bolder;
-  color: #1F2937;
-}
-.map-section {
-  position: relative;
-
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.map-img {
-  max-width: 50%;
-  height: auto;
-}
-.branch-email {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-/* the animation part */
-.map-img:hover + .info-div-1 {
-  visibility: hidden;
-  display: none;
-}
-#infoDiv {
-  width: 0vw;
-  height: 0vh;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1.5s, visibility 0s;
-}
-.map-img:hover + .info-div-1 + #infoDiv {
-  width: auto;
-  height: fit-content;
-  visibility: visible;
-  opacity: 1;
-}
-/* meet and greet section */
-.meet-greet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2d3c52;
-}
-.meet-form, .ge-feed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-/* general inquire/feedback */
-.gen-feed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 /* media queries rules */
-/*for contact/index page --------> */
 @media only screen and (min-width: 1100px) {
   /* nav bar horizontally */
   .navbar {
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
+  }
+  /* header information section  */
+  .desc {
+    flex-direction: row;
+  }
+  .desc-img {
+    max-width: 95vw;
+    height: auto;
+  }
+  .title {
+    margin: 0;
+    align-self: flex-start;
+  }
+  .hero-btn {
+    align-self: flex-start
   }
   /* random information section */
   .info-section {
@@ -253,32 +190,5 @@ footer {
   }
   figure {
     margin: 1rem;
-  }
-  /*for contact page only --------> */
-  /* map section */
-  .map-section {
-    flex-direction: row;
-  }
-  .bottom-map-sec {
-      display: flex;
-      gap: 5rem;
-  }
-}
-/* for the header issue with long textx (temporary fix) */
-@media only screen and (min-width: 1300px) {
-  /* header information section  */
-  .desc {
-    flex-direction: row;
-  }
-  .desc-img {
-    max-width: 95vw;
-    height: auto;
-  }
-  .title {
-    margin: 0;
-    align-self: flex-start;
-  }
-  .hero-btn {
-    align-self: flex-start
   }
 }

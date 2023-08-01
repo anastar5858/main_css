@@ -1,195 +1,194 @@
 @font-face {
   font-family: "Roboto";
-  src: url(./fonts/Roboto-Thin.ttf) format("truetype");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(./fonts/Roboto-Light.ttf) format("truetype");
-  font-weight: 300;
+  src: url(./fonts/Roboto-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   src: url(./fonts/Roboto-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(./fonts/Roboto-Medium.ttf) format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url(./fonts/Roboto-Bold.ttf) format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(./fonts/Roboto-Black.ttf) format("truetype");
-  font-weight: 900;
+  font-weight: bolder;
 }
 * {
   font-family: "Roboto", sans-serif;
-  margin: 0;
 }
-.flexbox-container {
+/* grouping rules*/
+main > * {
+  margin-top: 5rem;
+}
+header, footer {
+  background-color: #1F2937;
+}
+
+.button, .cta-section {
+  background-color: #3882f6;
+}
+a, .hero-paragraph, .cta-section {
+  color: #E5E7EB;
+}
+.logo, .title, footer {
+  color: #F9FAF8;
+}
+.desc, .random-fig > figcaption {
+  padding-right: 20%;
+  padding-left: 20%;
+} 
+/* header section  */
+header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-.header,
-.footer-section {
-  background-color: #1f2937;
-  color: #f9faf8;
-  padding: 20px 20px;
-}
-.container-1100 {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.container-800 {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.logo {
-  font-size: 24px;
-}
-.nav-links {
-  font-size: 18px;
-  color: #e5e7eb;
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 0.1;
-}
-.link {
-  color: #e5e7eb;
-  display: inline-block;
+a {
   text-decoration: none;
 }
-.hero-wrapper {
-  background-color: #1f2937;
-  padding: 60px 20px 80px;
-}
-.hero-title {
-  width: 40%;
-}
-.title {
-  font-size: 48px;
-  font-weight: 900;
-  color: #f9faf8;
-}
-.hero-paragraph {
-  font-size: 18px;
-  color: #e5e7eb;
-  margin-bottom: 20px;
-}
-.hero-signup-button {
-  padding: 9px 30px;
-  background-color: #3882f6;
-  color: #f9faf8;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 7px;
-}
-.info-section {
-  padding: 40px 20px 80px;
-  text-align: center;
-  color: #1f2937;
-}
-.info-title {
-  font-size: 36px;
-  font-weight: 900;
-}
-.info-cards {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  margin: 40px 0;
-}
-.info-card {
-  width: 200px;
+.navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.logo {
+  align-self: center;
+  font-size: 24px;
+}
+.nav-links {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 18px;
+  justify-content: center;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
 }
-.info-img {
-  border: 3px solid #3882f6;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
+.desc-con {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.title {
+  font-size: 48px;
+  font-weight: bolder;
+  align-self: center;
+}
+.hero-btn {
+  align-self: center
+}
+.desc-img {
+  max-width: 95vw;
+  height: auto;
+}
+.hero-paragraph {
+  font-size: 18px;
+  padding: 2ex 5ex 2ex 5ex; 
+
+}
+.button {
+  padding: 1ex 2ex 1ex 2ex; 
+  border-radius: 1ex;
+  text-align: center;
+  width: fit-content;
+  border: 0.01rem solid #F9FAF8;
+  height: fit-content;
+}
+/* info section  */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.random-fig {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+.random-fig > img, .random-fig > figcaption {
+  align-self: center;
+}
+.random-fig > img {
+  max-width: 50%;
+  max-height: 20vh;
+  border: 0.1rem solid black;
+}
+.info-title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+/* quote section  */
+em, small {
+  display: block;
 }
 .quote-section {
-  background-color: #e5e7eb;
-  padding: 100px 20px 80px;
-  color: #1f2937;
+  background-color: #E5E7EB;
 }
 .quote-msg {
   font-size: 36px;
-  font-weight: 100;
-  font-style: italic;
+  color: #1F2937;
 }
-.author {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: right;
-}
+/* call to action section  */
 .cta-section {
-  padding: 80px 20px;
-}
-.cta-bluebox {
-  padding: 40px 100px;
-  background-color: #3882f6;
-  color: #f9faf8;
-  border-radius: 10px;
-  font-size: 18px;
+  margin-right: calc(100vw - 90%);
+  margin-left: calc(100vw - 90%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: calc(100vh - 80vh);
 }
 .cta-title {
-  font-weight: 700;
+  margin: 0;
 }
 .cta-small-text {
-  color: #e5e7eb;
-  font-weight: 300;
+  opacity: 0.8;
 }
-.signup-button {
-  border: 2px solid #f9faf8;
-  border-radius: 7px;
-  padding: 9px 30px;
-  color: #f9faf8;
-  text-decoration: none;
-}
-.footer-section {
+/* footer section  */
+footer {
+  margin-top: 2vh;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  .flexbox-container {
-    flex-direction: column;
+/* media queries rules */
+@media only screen and (min-width: 1100px) {
+  /* nav bar horizontally */
+  .navbar {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
   }
-  .logo {
-    margin-bottom: 30px;
+  /* header information section  */
+  .desc {
+    flex-direction: row;
   }
-  .nav-links {
-    display: block;
+  .desc-img {
+    max-width: 95vw;
+    height: auto;
   }
-
-  .hero-title {
-    width: 100%;
-    margin-bottom: 30px;
+  .title {
+    margin: 0;
+    align-self: flex-start;
   }
-  .info-cards {
-    flex-direction: column;
+  .hero-btn {
+    align-self: flex-start
+  }
+  /* random information section */
+  .info-section {
     align-items: center;
+    margin-right: calc(100vw - 80%);
+    margin-left: calc(100vw - 80%);
   }
-  .info-card {
-    margin-bottom: 20px;
+  .random-info {
+    display: flex;
   }
-  .cta-bluebox {
-    padding: 40px;
+  .random-fig > figcaption {
+    padding-right: 0;
+    padding-left: 0;
   }
-  .cta-texts {
-    margin-bottom: 30px;
+  .random-fig > img {
+    max-height: 100vh;
+  }
+  figure {
+    margin: 1rem;
   }
 }

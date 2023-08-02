@@ -45,6 +45,9 @@
   color: #f9faf8;
   padding: 20px 40px;
 }
+.footer-section p{
+  margin-bottom: 0;
+}
 .container-1168 {
   width: 100%;
   max-width: 1168px;
@@ -168,7 +171,7 @@ a {
   margin: 40px 0;
 }
 .info-card {
-  width: 220px;
+  width: 275px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,13 +180,13 @@ a {
 .info-img {
   box-shadow: 2px 2px 12px 1px #888;
   border-radius: 10px;
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
   margin-bottom: 10px;
 }
 .quote-section {
   background-color: #e5e7eb;
-  padding: 100px 40px 80px;
+  padding: 80px 40px 60px;
   color: #1f2937;
 }
 .quote-msg {
@@ -214,6 +217,7 @@ a {
 .cta-small-text {
   color: #e5e7eb;
   font-weight: 300;
+  margin-bottom: 0;
 }
 .signup-button {
   border: 2px solid #f9faf8;

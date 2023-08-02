@@ -11,7 +11,7 @@ html {
     overflow-x: hidden;
     width: 100%;
 }
-main > * {
+main > section:not(.hero-wrapper, .cta-section) {
     margin-top: 5rem;
 }
 /* grouping/general rules*/
@@ -32,6 +32,9 @@ input, textarea {
 textarea {
     min-height: 20vh;
     min-width: 50%;
+}
+.info-title, .long {
+    margin-bottom: 2rem;
 }
 /* header section  */
 .button, button {
@@ -64,6 +67,11 @@ textarea {
     gap: 1rem;
     align-items: center;
 }
+.info-div-1, .info-div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 /* the animation part */
 .map-img:hover + .info-div-1 {
     visibility: hidden;
@@ -84,8 +92,7 @@ textarea {
 }
 /* meet and greet section */
 .meet-greet {
-    padding-right: calc(100vw - 90%);
-    padding-left: calc(100vw - 90%);
+    padding: 1rem calc(100vw - 90%) 1rem calc(100vw - 90%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,3 +128,4 @@ textarea {
     justify-content: space-around;
 }
 }
+

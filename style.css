@@ -117,20 +117,7 @@ a {
   color: #e5e7eb;
   display: inline-block;
 }
-.hero-signup-button {
-  padding: 9px 25px;
-  background-color: #3882f6;
-  color: #f9faf8;
-  font-size: 18px;
-  border-radius: 7px;
-}
 /* Sections & Wrappers */
-.header,
-.footer-section {
-  background-color: #1f2937;
-  color: #f9faf8;
-  padding: 20px 40px;
-}
 .hero-wrapper {
   background-color: #1f2937;
   padding: 60px 40px 80px;
@@ -142,6 +129,18 @@ a {
   width: 100%;
   border-radius: 15px;
   max-height: 40vh;
+}
+.hero-paragraph {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+.hero-signup-button {
+  padding: 9px 25px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-size: 18px;
+  border-radius: 7px;
 }
 .info-section {
   padding: 40px 40px 80px;

@@ -111,6 +111,9 @@ textarea {
     flex-direction: column;
     align-items: center;
 }
+.gn-text {
+    text-align: center;
+}
 /* media queries bigger screen  */
 @media only screen and (min-width: 600px) {
 .long {

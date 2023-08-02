@@ -7,26 +7,19 @@
     <link rel="stylesheet" href="./assets/css/contact.css" />
 </head>
 <body>
-    <header>
-        <section class="header">
-          <div class="container-1100 flexbox-container">
-            <a href="/main_css" class="logo">
-                <img
-                 src="../images/furry-friends-logo.png"
-                alt="logo"
-                width="250px"
-                height="auto"
-                />
+    <header class="header">
+        <div class="container-1100 flexbox-container">
+            <a href="/" class="logo">
+            <img src="../images/furry-friends-logo.png" alt="logo" width="250px" height="auto" />
             </a>
             <nav class="nav-links">
-              <a href="./services.html" class="link">Services</a>
-              <span>|</span>
-              <a href="./about.html" class="link">About us</a>
-              <span>|</span>
-              <a href="./contact.html" class="link">Contact us</a>
+            <a href="../pages/services.html" class="link">Services</a>
+            <span>|</span>
+            <a href="../pages/about.html" class="link">About us</a>
+            <span>|</span>
+            <a href="../pages/contact.html" class="link">Contact us</a>
             </nav>
-          </div>
-        </section>
+        </div>
     </header>
     <main>
         <section class="hero-wrapper">
@@ -43,15 +36,16 @@
                 </p>
                 <a href="#" class="hero-signup-button hover-scale">Sign up</a>
                 </div>
-                <div class="hero-img">
+                <picture class="hero-img"> 
                     <img class="desc-img" src="./assets/images/contact.avif" alt="hero image" />
-                </div>
+                </picture>
             </div>
         </section>
         <section class="map-section">
             <h2 class="info-title">Our Branches:</h2>
             <div class="bottom-map-sec">
                 <img class="map-img" src="./assets/images/maps.jpg" alt="branches google map">
+                <!-- <img class="map-pic" src="./assets/images/maps.jpg" alt="branches google map"> -->
                 <div class="info-div-1">
                     <p>
                         <strong>Branch Address:</strong>
@@ -63,6 +57,7 @@
                         <strong>Branch opening hours:</strong>
                         <br>
                         Monday - Friday: 8:00AM - 8:00PM
+                        <br>
                         Saturday - Sunday: 10:00AM - 6:00PM
                     </p>
                     <hr>
@@ -94,6 +89,7 @@
                         <strong>Branch opening hours:</strong>
                         <br>
                         Monday - Friday: 8:00AM - 8:00PM
+                        <br>
                         Saturday - Sunday: 10:00AM - 6:00PM
                     </p>
                     <hr>
@@ -142,23 +138,20 @@
                 <button type="submit">Send</button>
             </form>
         </section>
-        <section class="cta-section">
-            <div class="container-1100">
-              <div class="cta-bluebox flexbox-container">
-                <div class="cta-texts">
-                  <div class="cta-title">Join the FurryFriends family!</div>
-                  <div class="cta-small-text">
-                    Experience the joy of knowing your pet is in the best hands
-                    possible.
-                  </div>
-                </div>
-                <a href="#" class="signup-button hover-scale">Sign up</a>
-              </div>
-            </div>
-        </section>
+      <section class="cta-section">
+        <div class="container-1100 cta-bluebox flexbox-container">
+          <div class="cta-texts">
+            <strong class="cta-title">Book Our Services Now</strong>
+            <p class="cta-small-text">
+              Give Your Pets the Best Care!
+            </p>
+          </div>
+          <a href="#" class="signup-button hover-scale">Sign up</a>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div class="footer-section">Copyright ®FurryFriends</div>
+    <footer class="footer-section">
+        <p><strong>Copyright ®FurryFriends</strong></p>
     </footer>
     </main> 
 </body>

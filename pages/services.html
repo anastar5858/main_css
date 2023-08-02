@@ -9,26 +9,19 @@
     <title>Services</title>
   </head>
   <body>
-    <header>
-      <section class="header">
-        <div class="container-1100 flexbox-container">
-          <a href="/" class="logo">
-            <img
-             src="../images/furry-friends-logo.png"
-            alt="logo"
-            width="250px"
-            height="auto"
-            />
-          </a>
-          <nav class="nav-links">
-            <a href="./services.html" class="link">Services</a>
-            <span>|</span>
-            <a href="./about.html" class="link">About us</a>
-            <span>|</span>
-            <a href="./contact.html" class="link">Contact us</a>
-          </nav>
-        </div>
-      </section>
+    <header class="header">
+      <div class="container-1100 flexbox-container">
+        <a href="/" class="logo">
+          <img src="../images/furry-friends-logo.png" alt="logo" width="250px" height="auto" />
+        </a>
+        <nav class="nav-links">
+          <a href="../pages/services.html" class="link">Services</a>
+          <span>|</span>
+          <a href="../pages/about.html" class="link">About us</a>
+          <span>|</span>
+          <a href="../pages/contact.html" class="link">Contact us</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="services-hero">
@@ -48,7 +41,7 @@
         </div>
       </section>
       <section class="services-section">
-        <div class="container-960 flexbox-container">
+        <section class="container-960 flexbox-container">
           <div class="column">
             <h2>Pet Guardian Services</h2>
             <p>
@@ -63,14 +56,18 @@
           </div>
           <div class="column">
             <figure class="services-image-container">
-              <img src="../images/cat-eating.jpg" alt="Cat eating catfood out of bowl" width="500px">
+              <picture>
+                <img src="../images/cat-eating.jpg" alt="Cat eating catfood out of bowl" width="500px">
+              </picture>
             </figure>
           </div>
-        </div>
-        <div class="container-960 flexbox-container">
+        </section>
+        <section class="container-960 flexbox-container">
           <div class="column">
             <figure class="services-image-container">
-              <img src="../images/dog-walk.jpeg" alt="Girl hugging dog ouside with leash" width="500px">
+              <picture>
+                <img src="../images/dog-walk.jpeg" alt="Girl hugging dog ouside with leash" width="500px">
+              </picture>
             </figure>
           </div>
           <div class="column">
@@ -84,8 +81,8 @@
             </p>
             <a href="" class="hero-signup-button">Sign up</a>
           </div>
-        </div>
-        <div class="container-960 flexbox-container">
+        </section>
+        <section class="container-960 flexbox-container">
           <div class="column">
             <h2 class="services-title">Stay-Over Pet Sitting</h2>
             <p>
@@ -104,7 +101,7 @@
               <img src="../images/pet-sitting.jpeg" alt="" width="500px">
             </figure>
           </div>
-        </div>
+        </section>
       </section>
       <section class="join-us-section">
         <div class="container-560 image-wrapper">
@@ -120,20 +117,19 @@
         </div>
       </section>
       <section class="cta-section">
-        <div class="container-960 cta-bluebox flexbox-container">
-            <div class="cta-texts">
-              <div class="cta-title">Book Our Services Now</div>
-              <div class="cta-small-text">
-                Give Your Pets the Best Care!
-              </div>
-            </div>
-            <a href="" class="signup-button">Sign up</a>
+        <div class="container-1100 cta-bluebox flexbox-container">
+          <div class="cta-texts">
+            <strong class="cta-title">Book Our Services Now</strong>
+            <p class="cta-small-text">
+              Give Your Pets the Best Care!
+            </p>
           </div>
+          <a href="#" class="signup-button hover-scale">Sign up</a>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <div class="footer-section">Copyright ®FurryFriends</div>
+    <footer class="footer-section">
+      <p><strong>Copyright ®FurryFriends</strong></p>
     </footer>
   </body>
 </html>

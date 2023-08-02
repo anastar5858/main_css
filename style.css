@@ -68,6 +68,11 @@
   margin: auto;
   padding: 40px 0px 40px 0px;
 }
+.container-800 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 .column {
   max-width: 50%;
   display: inline;
@@ -98,10 +103,6 @@ p {
   margin-bottom: 40px;
 }
 /* Items */
-a {
-  text-decoration: none;
-  text-align: center;
-}
 a {
   text-decoration: none;
   text-align: center;
@@ -156,6 +157,10 @@ a {
   text-align: center;
   color: #1f2937;
 }
+.info-title {
+  font-size: 36px;
+  font-weight: 900;
+}
 .info-cards {
   display: flex;
   justify-content: center;
@@ -184,6 +189,7 @@ a {
 .quote-msg {
   font-size: 36px;
   font-weight: 100;
+  font-style: italic;
 }
 .author {
   font-size: 18px;

@@ -102,6 +102,10 @@ a {
   text-decoration: none;
   text-align: center;
 }
+a {
+  text-decoration: none;
+  text-align: center;
+}
 .logo {
   font-size: 24px;
   color: #f9faf8;
@@ -190,6 +194,11 @@ a {
   color: #f9faf8;
   border-radius: 10px;
   font-size: 18px;
+}
+.cta-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  display: block;
 }
 .cta-small-text {
   color: #e5e7eb;

@@ -2,12 +2,13 @@
   background-image: url('../images/banner-1.jpg');
   background-position: left;
   background-size: cover;
-  padding: 60px 20px 80px;
-  min-height: 50vh;
+  width: 100%;
 }
 .services-hero-container {
   width: 100%;
   color: black;
+  display: flex;
+  justify-content: flex-start;
 }
 .services-image-container {
   min-height: 400px;
@@ -15,11 +16,10 @@
   object-position: 0% 0%;
   overflow: hidden;
 }
-.services-section .column {
-  padding: 0px 20px 0 20px;
-}
+
 .column {
-  margin-bottom: 2rem;
+  max-width: 50%;
+  padding: 40px;
 }
  .join-us-section{
   width: 100%;
@@ -37,4 +37,39 @@
 /* Typography */
 p.services-hero, h1.services-hero {
   color: black;
+}
+.services-image-container img {
+  width: 500px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .column {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  #hero-column {
+    padding: 40px 40px;
+  }
+  .services-hero-container {
+    justify-content: center;
+  }
+  .services-hero {
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+  .services-section {
+    padding: 0px 40px;
+  }
+  .services-image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .image-wrapper {
+    padding: 50px 40px;
+  }
+  .container-560 {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
 }

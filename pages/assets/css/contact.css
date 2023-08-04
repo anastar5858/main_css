@@ -100,6 +100,11 @@ p {
     visibility: visible;
     opacity: 1;
 }
+/* hero section */
+.desc-img {
+    width: 100%;
+    height: 300px;
+}
 /* meet and greet section */
 .meet-greet {
     padding: 2rem calc(100vw - 90%) 2rem calc(100vw - 90%);

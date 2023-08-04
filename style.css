@@ -237,9 +237,11 @@ a {
   text-align: center;
 }
 /* testing hamburger menu */
-/* hamburger menu play around */
 input[type="checkbox"] {
   display: none;
+}
+.menu-icon {
+  z-index: 2;
 }
 .menudiv {
   display: none;
